@@ -4,7 +4,7 @@
 function activateGallery() {
   let thumbnails = document.querySelectorAll("#gallery-thumbs > div > img");
   let mainImage = document.querySelector("#gallery-photo img");
-  let preloaded = new Array();
+  window.preloaded = new Array();
 
   thumbnails.forEach(function(thumbnail) {
     thumbnail.addEventListener("click", function() {
